@@ -1,50 +1,139 @@
-# Welcome to your Expo app 👋
+🎟️ Simple Event Booking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+         A React Native mobile application that allows users to browse, view, and register for events.
+         This project was built as part of a React Native Developer Task.
 
-## Get started
+🚀 Features
+         👤 User Authentication
+          Sign Up and Login using MockAPI.io
+          as backend simulation.
+          User data is stored locally using AsyncStorage for session management.
 
-1. Install dependencies
+📅 Event Listings
 
-   ```bash
-   npm install
-   ```
+      Fetches and displays all available events from MockAPI.
+      
+      Each event shows:
+      
+      🏷 Title
+      
+      🗓 Date
+      
+      💰 Price
+      
+      📍 Location
+      
+      🖼 Image
+      
+      When the user taps on an event, they’re navigated to a detailed view.
 
-2. Start the app
+📝 Event Details Page
 
-   ```bash
-   npx expo start
-   ```
+      Displays detailed event information including:
+      
+      Event Name
+      
+      Date & Time
+      
+      Location
+      
+      Description
+      
+      Speakers
+      
+      Price (or “Free” if applicable)
+      
+      Capacity
+      
+      Available Spots
+      
+      Image / Banner
+      
+      Includes a Register button to allow users to register for the event.
 
-In the output, you'll find options to open the app in a
+🎟️ User Dashboard
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   Displays all the events that the logged-in user has registered for.
+   
+   ⚙️ Tech Stack
+   
+   React Native (Expo)
+   
+   React Navigation
+   
+   AsyncStorage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   MockAPI.io
+   
+   Material Icons / Ionicons (for UI icons)
 
-## Get a fresh project
 
-When you're ready, run:
+###################3Notes############################################################################################################
 
-```bash
-npm run reset-project
-```
+      The app interacts with a MockAPI backend for authentication and event data.
+      
+      Local user session is maintained using AsyncStorage.
+      
+      Navigation between screens is handled using React Navigation.
+      
+      Basic error messages are shown via Alert when API calls fail.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+----------------------------------------------------------------------------------------------------------------------------------
 
-To learn more about developing your project with Expo, look at the following resources:
+MockAPI Setup
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+      The app uses MockAPI.io
+      to simulate backend services for both Authentication and Events Management.
+      Below are the example endpoints and data structures used:
 
-## Join the community
+ 🧍‍♀️ Users Endpoint
+      https://68f93760deff18f212b8fb3b.mockapi.io/users
 
-Join our community of developers creating universal apps.
+--------------------------------------------
+   {
+  "id": "1",
+  "name": "Nada Keshka",
+  "email": "nada@example.com",
+  "password": "123456"
+  }
+--------------------------------------------
+Used for:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+User Sign Up and Login
+Authentication via email & password
+User ID stored in AsyncStorage after login
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+🎫 Events Endpoint
+ https://68f93760deff18f212b8fb3b.mockapi.io/events
+
+ -------------------------------------------
+ {
+  "id": "101",
+  "title": "AI Conference 2025",
+  "date": "2025-11-12",
+  "location": "Cairo, Egypt",
+  "description": "A full-day event discussing the future of Artificial Intelligence.",
+  "speakers": ["Dr. Hady", "Prof. Ahmed Youssef"],
+  "price": "Free",
+  "capacity": 200,
+  "availableSpots": 150,
+  "imageUrl": "https://example.com/event-banner.jpg",
+  "registrations": [
+    { "userId": "1", "status": "confirmed" }
+  ]
+} ----------------------------------------------
+  
+   Used for:
+   
+   Fetching and displaying all available events in the Dashboard
+   
+   Viewing full details in EventDetails
+   
+   Registering users for events
+   
+   Fetching user-specific events in UserDashboard
+
+
+
