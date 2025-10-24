@@ -22,7 +22,7 @@ export default function App() {
           component={Dashboard} 
            options={{ headerShown:false }}
         />
-        <Stack.Screen name="My Booking" component={UserDashboard} />
+        <Stack.Screen name="UserDashboard" component={UserDashboard} />
         <Stack.Screen name="EventDetails" component={EventDetails} />
 
       </Stack.Navigator>
