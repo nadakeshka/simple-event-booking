@@ -3,11 +3,13 @@
          A React Native mobile application that allows users to browse, view, and register for events.
          This project was built as part of a React Native Developer Task.
 
-🚀 Features
+ 🚀 Features
+
 👤 User Authentication
-          Sign Up and Login using MockAPI.io
-          as backend simulation.
-          User data is stored locally using AsyncStorage for session management.
+
+         Sign Up and Login using MockAPI.io
+         as backend simulation.   
+         User data is stored locally using AsyncStorage for session management.
 
 📅 Event Listings
 
