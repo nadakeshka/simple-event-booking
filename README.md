@@ -146,5 +146,29 @@ Used for:
             
             Fetching user-specific events in UserDashboard
 
+--------------------------------------------------------
+
+🧩 Setup & Run Instructions
+
+1️⃣ Prerequisites
+
+         1) Node.js 
+              (version v22.20.0)
+         2)Expo CLI
+         3)Git
+
+Clone the Repository:
+
+         git clone https://github.com/nadakeshka/simple-event-booking
+         cd simple-event-booking
+
+Install Dependencies:
+
+         npm install
+
+Start the App:
+
+        npx expo start
+
 
 
