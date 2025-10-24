@@ -4,7 +4,7 @@
          This project was built as part of a React Native Developer Task.
 
 🚀 Features
-         👤 User Authentication
+👤 User Authentication
           Sign Up and Login using MockAPI.io
           as backend simulation.
           User data is stored locally using AsyncStorage for session management.
@@ -53,22 +53,22 @@
 
 🎟️ User Dashboard
 
-   Displays all the events that the logged-in user has registered for.
+            Displays all the events that the logged-in user has registered for.
    
-   ⚙️ Tech Stack
-   
-   React Native (Expo)
-   
-   React Navigation
-   
-   AsyncStorage
+⚙️ Tech Stack
+            
+            React Native (Expo)
+            
+            React Navigation
+            
+            AsyncStorage
+         
+            MockAPI.io
+            
+            Material Icons / Ionicons (for UI icons)
 
-   MockAPI.io
-   
-   Material Icons / Ionicons (for UI icons)
 
-
-###################3Notes############################################################################################################
+###################    Notes     ############################################################################################################
 
       The app interacts with a MockAPI backend for authentication and event data.
       
@@ -91,49 +91,58 @@ MockAPI Setup
       https://68f93760deff18f212b8fb3b.mockapi.io/users
 
 --------------------------------------------
-   {
-  "id": "1",
-  "name": "Nada Keshka",
-  "email": "nada@example.com",
-  "password": "123456"
-  }
+            {
+           "id": "1",
+           "name": "Nada Keshka",
+           "email": "nada@example.com",
+           "password": "123456"
+           }
 --------------------------------------------
 Used for:
 
-User Sign Up and Login
-Authentication via email & password
-User ID stored in AsyncStorage after login
+         User Sign Up and Login
+         Authentication via email & password
+         User ID stored in AsyncStorage after login
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 🎫 Events Endpoint
  https://68f93760deff18f212b8fb3b.mockapi.io/events
 
  -------------------------------------------
- {
-  "id": "101",
-  "title": "AI Conference 2025",
-  "date": "2025-11-12",
-  "location": "Cairo, Egypt",
-  "description": "A full-day event discussing the future of Artificial Intelligence.",
-  "speakers": ["Dr. Hady", "Prof. Ahmed Youssef"],
-  "price": "Free",
-  "capacity": 200,
-  "availableSpots": 150,
-  "imageUrl": "https://example.com/event-banner.jpg",
-  "registrations": [
-    { "userId": "1", "status": "confirmed" }
+          {
+           "i
+           d": "101",
+           "title": "AI Conference 2025",
+           "date": "2025-11-12",
+           "location": "Cairo, Egypt",
+           "description": "A full-day event discussing the future of Artificial Intelligence.",
+           "price": "Free",
+           "capacity": 200,
+           "availableSpots": 150,
+           "imageUrl": " ",
+         
+           
+           "registrations": [
+             { 
+             
+    "userId": "1",
+    
+    "status": "confirmed" }
   ]
-} ----------------------------------------------
+}
+
+
+----------------------------------------------
   
    Used for:
    
-   Fetching and displaying all available events in the Dashboard
-   
-   Viewing full details in EventDetails
-   
-   Registering users for events
-   
-   Fetching user-specific events in UserDashboard
+            Fetching and displaying all available events in the Dashboard
+            
+            Viewing full details in EventDetails
+            
+            Registering users for events
+            
+            Fetching user-specific events in UserDashboard
 
 
 
